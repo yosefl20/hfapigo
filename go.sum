@@ -1,3 +1,5 @@
+github.com/TannerKvarfordt/hfapigo v1.0.0 h1:DYTHsGPdOmnVuXyq8TGaWnCQnwI3qOoWM6PZYYpmMpw=
+github.com/TannerKvarfordt/hfapigo v1.0.0/go.mod h1:JsKsivKrWfffkQPluyRIydTt5ONM83ThCwtA7zPzKm0=
 github.com/google/go-cmp v0.5.6 h1:BKbKCqvP6I+rmFHt06ZmyQtvB8xAkWdhFyr0ZUNZcxQ=
 github.com/google/go-cmp v0.5.6/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
 github.com/yuin/goldmark v1.4.13/go.mod h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=
