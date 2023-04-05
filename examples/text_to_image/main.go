@@ -20,7 +20,7 @@ func init() {
 }
 
 func main() {
-	input := "a beautiful landscape, oil paint"
+	input := "a beautiful landscape, oil paint style"
 	const numReturnSequences = 3
 
 	fmt.Printf("Input: \"%s\"\n", input)
@@ -34,7 +34,7 @@ func main() {
 	fmt.Print("Sending request")
 	go func() {
 		resps, err := hfapigo.SendTextToImageRequest(hfapigo.RecommendedTextToImageModel, &hfapigo.TextToImageRequest{
-			Input: input,
+			Inputs: input,
 		})
 		ch <- ChanRv{resps, err}
 	}()
@@ -51,7 +51,7 @@ func main() {
 			defer out.Close()
 
 			var opts jpeg.Options
-			opts.Quality = 1
+			opts.Quality = 90
 
 			if err := jpeg.Encode(out, chrv.resps, &opts); err != nil {
 				fmt.Println(err)

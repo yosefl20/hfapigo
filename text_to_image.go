@@ -11,7 +11,7 @@ const RecommendedTextToImageModel = "stabilityai/stable-diffusion-2-1"
 
 type TextToImageRequest struct {
 	// (Required) a string to be generated from
-	Input string `json:"input,omitempty"`
+	Inputs string `json:"inputs,omitempty"`
 }
 
 func SendTextToImageRequest(model string, request *TextToImageRequest) (image.Image, error) {
